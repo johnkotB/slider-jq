@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-    $(window).on('load', function () {
+    function preload () {
 
         var preloader = $('#preloader');
 
         preloader.delay(3000).fadeOut('slow');
+    } preload();
 
-    });
 
     var slide = $('.small-img a'),
         smallImgBlock = $('.small-img'),
