@@ -1,7 +1,16 @@
 $(document).ready(function () {
 
+    $(window).on('load', function () {
+
+        var preloader = $('#preloader');
+
+        preloader.delay(3000).fadeOut('slow');
+
+    });
+
     var slide = $('.small-img a'),
         smallImgBlock = $('.small-img'),
+        bigImgBlock = $('.big-img'),
         contorls = $('.controls'),
         slideCount = slide.length,
         count = 0;
@@ -15,13 +24,16 @@ $(document).ready(function () {
 
     getWidth();
 
+    bigImgBlock.click(function (e) {
+        e.preventDefault();
+    });
 
     slide.on({
         mouseenter: function () {
-            $(this).animate({'opacity': 1});
+            $(this).addClass('opacity');
         },
         mouseleave: function () {
-            $(this).animate({'opacity': .25});
+            $(this).removeClass('opacity');
         },
         click: function (e) {
             e.preventDefault();
