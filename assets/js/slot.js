@@ -41,9 +41,10 @@ $(document).ready(function () {
                 srcNew = $(this).attr('href');
 
             imgBig.fadeOut(function () {
-                imgBig.attr('src', srcNew);
-                imgBig.fadeIn();
+                $(this).attr('src', srcNew);
+                $(this).fadeIn();
             });
+
         }
     });
 
