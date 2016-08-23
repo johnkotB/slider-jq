@@ -43,7 +43,7 @@ $(document).ready(function () {
             imgBig.fadeOut(function () {
                 $(this).attr('src', srcNew);
             });
-            imgBig.fadeIn();
+            imgBig.fadeIn(1000);
 
         }
     });
