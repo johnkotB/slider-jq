@@ -40,10 +40,7 @@ $(document).ready(function () {
             var imgBig = $('.big-img a img'),
                 srcNew = $(this).attr('href');
 
-            imgBig.fadeOut(function () {
-                $(this).attr('src', srcNew);
-            });
-            imgBig.fadeIn(1000);
+            imgBig.attr('src', srcNew);
 
         }
     });
