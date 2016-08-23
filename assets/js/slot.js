@@ -42,8 +42,8 @@ $(document).ready(function () {
 
             imgBig.fadeOut(function () {
                 $(this).attr('src', srcNew);
-                $(this).fadeIn();
             });
+            imgBig.fadeIn();
 
         }
     });
